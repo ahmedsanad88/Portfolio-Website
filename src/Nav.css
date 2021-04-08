@@ -1,0 +1,82 @@
+.float-chat {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    overflow-x: hidden;
+    top: 30%;
+    right: 0;
+    margin-right: 5px;
+    /* margin-right: 15px;
+    margin-bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.float-chat>.MuiIcon-root {
+    margin: 0 !important;
+}
+
+/* .main-body {
+    background-color: #25d366;
+    padding: 3px 3px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+} */
+
+.main-contact {
+    background-color: rgb(12, 87, 224);
+    padding: 7px 7px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.arrowUp {
+    background-color: rgb(190, 180, 207);
+    padding: 7px 7px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrowUp:hover {
+    background-color: rgb(126, 120, 136);
+}
+
+/* .main-body:hover {
+    background-color: #198d44;
+} */
+
+.main-contact:hover {
+    background-color: rgb(6, 62, 165);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .float-chat {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        overflow-x: hidden;
+        bottom: 0;
+        right: 0;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+    }
+}

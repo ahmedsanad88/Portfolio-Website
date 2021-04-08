@@ -1,0 +1,420 @@
+.about {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: black;
+    height: 100%;
+    width: 100vw;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    line-height: 150%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        ". img ."
+        " me me . "
+        " . list1 list1"
+        " skill skill ."
+        " . soft soft";
+}
+
+.about>img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.about__img {
+    grid-area: img;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid silver;
+    object-fit: cover;
+    object-position: 80% 20%;
+    justify-self: center;
+}
+
+.about__img:hover {
+    box-shadow: 0px 0px 30px rgba(62, 65, 221, 1);
+}
+
+
+.about__me {
+    grid-area: me;
+    align-self: center;
+    justify-self: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: xx-large;
+}
+
+.aboutMe {
+    text-align: center;
+    width: 50vw;
+    font-size: larger;
+    color: whitesmoke;
+    background-color: rgba(32, 0, 64, 0.9);
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.about__l {
+    grid-area: list1;
+    align-self: center;
+    justify-self: center;
+    text-align: left;
+}
+
+.firstL {
+    text-align: center;
+    width: 50vw;
+    font-size: larger;
+    background-color: rgba(32, 0, 64, 0.9);
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+ul {
+    color: whitesmoke;
+    list-style-type: none;
+    line-height: 150%;
+}
+
+
+.firstLetter {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.skill {
+    grid-area: skill;
+    align-self: center;
+    justify-self: center;
+    width: 50vw;
+}
+
+.all-ball {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(32, 0, 64, 0.9);
+    border-radius: 10px;
+}
+
+.word-skill {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+
+.ball {
+    border-radius: 50%;
+    border: 5px solid lightgray;
+    box-shadow: 0 6px 15px rgba(250, 250, 250, 0.6);
+    width: 120px;
+    height: 120px;
+    opacity: 0.6;
+    text-align: center;
+    color: white;
+    padding-top: 45px;
+    background-color: #2a2a72;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.all-ball>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    padding: 0;
+    margin: 0;
+}
+
+.ball:hover {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    opacity: 1;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.soft__skill {
+    grid-area: soft;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 100px;
+}
+
+.secondL {
+    text-align: center;
+    width: 50vw;
+    font-size: larger;
+    background-color: rgba(32, 0, 64, 0.9);
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 150%;
+}
+
+ol {
+    color: whitesmoke;
+    list-style-type: none;
+}
+
+/* media query */
+
+/* @media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+} */
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* body {
+    background-image: none;
+    overflow-x: hidden;
+  } */
+    .about img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 10px 0px;
+        font-size: large;
+        font-weight: 400;
+    }
+
+    .aboutMe {
+        font-size: small;
+    }
+
+    .firstL {
+        font-size: small;
+    }
+
+    .firstLetter {
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .word-skill {
+        font-size: large;
+    }
+
+    .ball {
+        border: 2px solid lightgray;
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+        width: 80px;
+        height: 80px;
+        opacity: 0.6;
+        text-align: center;
+        color: white;
+        padding-top: 25px;
+    }
+
+    .all-ball>p {
+        font-size: small;
+    }
+
+    .secondL {
+        font-size: small;
+    }
+
+    .soft__skill {
+        margin-bottom: 40px;
+    }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .about img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 10px 0px;
+        font-size: large;
+        font-weight: 400;
+    }
+
+    .aboutMe {
+        font-size: small;
+    }
+
+    .firstL {
+        font-size: small;
+    }
+
+    .firstLetter {
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .word-skill {
+        font-size: large;
+    }
+
+    .ball {
+        border: 2px solid lightgray;
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+        width: 80px;
+        height: 80px;
+        opacity: 0.6;
+        text-align: center;
+        color: white;
+        padding-top: 25px;
+    }
+
+    .secondL {
+        font-size: small;
+    }
+
+    .soft__skill {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .about img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 10px 0px;
+        font-size: large;
+        font-weight: 400;
+    }
+
+    .aboutMe {
+        font-size: small;
+    }
+
+    .firstL {
+        font-size: small;
+    }
+
+    .firstLetter {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .word-skill {
+        font-size: large;
+    }
+
+    .ball {
+        border: 2px solid lightgray;
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+        width: 80px;
+        height: 80px;
+        opacity: 0.6;
+        text-align: center;
+        color: white;
+        padding-top: 25px;
+    }
+
+    .all-ball>p {
+        font-size: small;
+    }
+
+    .secondL {
+        font-size: small;
+    }
+
+    .soft__skill {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    .about img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 10px 0px;
+        font-size: small;
+    }
+
+    .aboutMe {
+        font-size: small;
+    }
+
+    .firstL {
+        font-size: small;
+    }
+
+    .firstLetter {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .word-skill {
+        font-size: small;
+    }
+
+    .ball {
+        border: 2px solid lightgray;
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+        width: 80px;
+        height: 80px;
+        opacity: 0.6;
+        text-align: center;
+        color: white;
+        padding-top: 25px;
+    }
+
+    .all-ball>p {
+        font-size: small;
+    }
+
+    .secondL {
+        font-size: small;
+    }
+
+    .soft__skill {
+        margin-bottom: 40px;
+    }
+
+}

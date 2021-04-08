@@ -1,0 +1,675 @@
+.home {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -100;
+    background-image: linear-gradient(180deg, rgba(32, 0, 64, 0.9) 40%, rgba(0, 0, 0, 1));
+}
+
+.particles {
+    position: absolute;
+    margin-top: -100px;
+    height: 25%;
+    width: 100vw;
+    z-index: -1;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    bottom: 100px;
+    font-size: 1.5rem;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    /* background-color: black; */
+}
+
+.card:hover {
+    box-shadow: 0 40px 100px rgba(62, 65, 221, 0.5);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.card__image {
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    display: block;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+}
+
+.card__image img {
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    filter: blur(3px);
+    animation-name: blur;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blur {
+    from {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+    }
+}
+
+.card__header {
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.card__profile {
+    align-self: center;
+    justify-self: center;
+    display: block;
+    overflow: hidden;
+    width: 10vmax;
+    height: 10vmax;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.card__profile img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    position: absolute;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 1));
+}
+
+.card__body {
+    padding: 0 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__name {
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    background: -webkit-linear-gradient(150deg, white, gray, white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.card:hover .card__name {
+    background: -webkit-linear-gradient(gray, white, gray);
+    background: linear-gradient(gray, white, gray);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card__job {
+    align-self: center;
+    justify-self: center;
+    display: inline-block;
+    font-size: small;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    color: rgba(36, 86, 194, 0.45);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+}
+
+.card:hover .card__job {
+    color: rgb(187, 203, 240);
+    letter-spacing: 0.5rem;
+}
+
+.card__bio {
+    align-self: center;
+    justify-self: center;
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+    display: inline-block;
+    text-align: center;
+    margin: 15px 0 16px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 10px;
+    /*text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.35);*/
+    color: rgba(0, 0, 0, 0.65);
+    letter-spacing: 0.15rem;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.card:hover .card__bio {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    color: rgba(255, 255, 255, 0.85);
+    opacity: 1;
+}
+
+.card__footer {
+    position: relative;
+    -webkit-transform: translateY(60%);
+    transform: translateY(60%);
+    padding: 10px 20px;
+    opacity: 0;
+    -webkit-transition: all 0.5 ease;
+    transition: all 0.5 ease;
+}
+
+.card:hover .card__footer {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card__date {
+    display: inline-block;
+    align-self: left;
+    justify-self: left;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.45);
+    color: rgba(250, 250, 250, 0.6);
+}
+
+.home__list {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.git,
+.linkIn,
+.twitter,
+.youTube {
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.git:hover {
+    background-color: white;
+    color: black;
+}
+
+.linkIn:hover {
+    background-color: white;
+    color: #0077B5;
+}
+
+.twitter:hover {
+    background-color: white;
+    color: #55acee;
+}
+
+.youTube:hover {
+    background-color: white;
+    color: #cd201f;
+}
+
+.social>.MuiIcon-fontSizeLarge {
+    font-size: x-large !important;
+}
+
+
+@media (min-width: 2000px){
+    .particles {
+        position: absolute;
+        margin-top: -100px;
+        height: 70%;
+        width: 100vw;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) and (orientation: landscape) {
+    .particles {
+        position: absolute;
+        margin-top: -100px;
+        height: 20%;
+        width: 100vw;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .home {
+        height: 100%;
+        width: 100%;
+        z-index: -100;
+    }
+
+    .particles {
+        position: absolute;
+        margin-top: -100px;
+        height: 15%;
+        width: 100vw;
+        z-index: -1;
+    }
+    
+    .card {
+        margin-top: 150px;
+        width: 100%;
+        max-width: 250px;
+        height: 400px;
+        bottom: 100px;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .card__header {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .card__profile {
+        width: 9vmax;
+        height: 9vmax;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+    }
+
+    .card__profile img {
+        width: 9vmax;
+        height: 9vmax;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .card__body {
+        padding: 0 10px;
+        z-index: 1;
+    }
+
+    .card__name {
+        margin-bottom: 10px;
+        font-size: large;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .card__job {
+        font-size: small;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        color: rgba(100, 130, 200, 0.45);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-bottom: 10px;
+    }
+
+    .card:hover .card__job {
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.3rem;
+    }
+
+    .card__bio {
+        margin: 10px 0 10px 0;
+        font-size: small;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    .card__date {
+        font-size: small;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .home__list {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .home {
+        height: 100%;
+        width: 100%;
+        z-index: -100;
+        background-image: linear-gradient(180deg, rgba(32, 0, 64, 0.9) 40%, rgba(0, 0, 0, 1));
+    }
+
+    .particles {
+        height: 20%;
+    }
+
+    .card {
+        margin-top: 150px;
+        width: 100%;
+        max-width: 250px;
+        height: 400px;
+        bottom: 100px;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .card__header {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .card__profile {
+        width: 10vmax;
+        height: 10vmax;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+    }
+
+    .card__profile img {
+        width: 10vmax;
+        height: 10vmax;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .card__body {
+        padding: 0 10px;
+        z-index: 1;
+    }
+
+    .card__name {
+        margin-bottom: 10px;
+        font-size: large;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .card__job {
+        font-size: small;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        color: rgba(100, 130, 200, 0.45);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-bottom: 10px;
+    }
+
+    .card:hover .card__job {
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.3rem;
+    }
+
+    .card__bio {
+        margin: 10px 0 10px 0;
+        font-size: small;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    .card__date {
+        font-size: small;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .home__list {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .home {
+        height: 100%;
+        overflow-x: hidden;
+        width: 100vw;
+        z-index: -100;
+        background-image: linear-gradient(180deg, rgba(32, 0, 64, 0.9) 40%, rgba(0, 0, 0, 1));
+    }
+
+    .particles {
+        height: 10%;
+    }
+
+    .card {
+        margin-top: 150px;
+        max-width: 220px;
+        height: 330px;
+        bottom: 100px;
+        font-size: large;
+        border-radius: 15px;
+        box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .card__header {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .card__profile {
+        width: 8vmax;
+        height: 8vmax;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+    }
+
+    .card__profile img {
+        width: 8vmax;
+        height: 8vmax;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .card__body {
+        padding: 0 10px;
+        z-index: 1;
+    }
+
+    .card__name {
+        margin-bottom: 10px;
+        font-size: small;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .card__job {
+        font-size: x-small;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-bottom: 10px;
+    }
+
+    .card:hover .card__job {
+        letter-spacing: 0.3rem;
+    }
+
+    .card__bio {
+        margin: 10px 0 10px 0;
+        font-size: small;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    .card__date {
+        font-size: x-small;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .home__list {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .home {
+        height: 100%;
+        overflow-x: hidden;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: -100;
+        background-image: linear-gradient(180deg, rgba(32, 0, 64, 0.9) 40%, rgba(0, 0, 0, 1));
+    }
+
+    .particles {
+        height: 10%;
+    }
+
+    .card {
+        margin-top: 150px;
+        max-width: 210px;
+        height: 320px;
+        bottom: 100px;
+        font-size: small;
+        border-radius: 15px;
+        box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .card__header {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .card__profile {
+        width: 8vmax;
+        height: 8vmax;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+    }
+
+    .card__profile img {
+        max-width: 8vmax;
+        max-height: 8vmax;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .card__body {
+        padding: 0 10px;
+        z-index: 1;
+    }
+
+    .card__name {
+        margin-bottom: 10px;
+        font-size: small;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .card__job {
+        font-size: x-small;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        color: rgba(100, 130, 200, 0.45);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-bottom: 10px;
+    }
+
+    .card:hover .card__job {
+        letter-spacing: 0.3rem;
+    }
+
+    .card__bio {
+        margin: 10px 0 10px 0;
+        font-size: small;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    .card__date {
+        font-size: x-small;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .home__list {
+        margin-bottom: 20px;
+    }
+}
