@@ -8,16 +8,8 @@ Clean and sleek Portfolio-Website that showing About you, Experience, Projects, 
 
 [Golive](https://ahmedsanadweb.com/)
 
-[Check it fast](https://user-images.githubusercontent.com/57454543/114036101-0dd17a00-9880-11eb-8b41-4e4997b7991f.mp4)
 
-
-
-
-
-
-[My-Movie](https://github.com/ahmedsanad88/Portfolio-repo/files/6279150/My-Movie-1.gif)
-
-
+![Check it fast](https://user-images.githubusercontent.com/57454543/114041082-80445900-9884-11eb-863d-797838d2710a.gif)
 
 
 # Note:
