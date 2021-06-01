@@ -1,7 +1,7 @@
 
-# Portfolio-Website
+# Portfolio-Website (Mobile-Friendly)
 
-Clean and sleek Portfolio-Website that showing About you, Experience, Projects, real chat with customers, contact form Easy to navigate Thanks to React Components.
+Clean and sleek Portfolio-Website (Mobile-Friendly) that showing About you, Experience, Projects, real chat with customers, contact form Easy to navigate Thanks to React Components.
 
 
 # How it's looking on live?
@@ -9,14 +9,17 @@ Clean and sleek Portfolio-Website that showing About you, Experience, Projects, 
 [Golive](https://ahmedsanadweb.com/)
 
 
-![Check it fast](https://user-images.githubusercontent.com/57454543/114041082-80445900-9884-11eb-863d-797838d2710a.gif)
+## Check it:
 
+https://user-images.githubusercontent.com/57454543/120302341-18335180-c2ce-11eb-85f8-0165adaa8e7f.mp4
 
 # Note:
 
-I used Firebase Cloud Firestore to be my backend for contacting Form.
+I used Firebase Cloud Firestore for backend.
 
-TAWK.for real-time chat as a direct way for contacting customers to me.
+TAWK.to for real-time chat with customers.
+
+[check TAWK website](https://www.tawk.to/)
 
 
 # Technology Used (For Full Website)
@@ -70,5 +73,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Authors
+Author
 Ahmed Sanad
