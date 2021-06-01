@@ -14,10 +14,13 @@
 
 .particles {
     position: absolute;
-    margin-top: -100px;
-    height: 25%;
+    filter: blur(1px);
+    z-index: -100;
+}
+
+#tsparticles {
+    height: 100vh;
     width: 100vw;
-    z-index: -1;
 }
 
 .card {

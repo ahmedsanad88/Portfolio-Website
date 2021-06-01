@@ -36,9 +36,9 @@ function About() {
             <div data-aos="fade-right" className="about__me"><br/>
                 <h2>About me</h2>
                 <p data-aos="fade-up" className="aboutMe">
-                My name is Ahmed Ibrahim, holder of a Bachelor of Science in Chemistry Department, 
-                which was the basis of my education in analyzing problems and working to find a logical solution to them.
-                I learned coding by myself. Because of my passion for software, i started to learn two years ago and all what i learned is that i'm still hungry for more.
+                My name is <b>Ahmed Sanad</b>, father of two daughters, holder of a Bachelor of Science in Chemistry, which was the basis of my education on analyzing problems and working to find a logical solution to them.
+                I learned coding by myself Because of my passion for software.
+                I have a diverse set of skills like design, HTML, CSS, Javascript and much more libraries and tools for both front-end & back-end which comes all togther to deliver Working with mastery and commitment.
                 </p>
             </div>
             <div data-aos="fade-left" className="about__l"><br/>
@@ -62,6 +62,7 @@ function About() {
             <div data-aos="fade-right" className="skill"><br/>
                     <h2 className="word-skill">Tools & Skills</h2>
                     <div data-aos="fade-up" data-aos-delay="100" className="all-ball">
+                        <p className="ball">C</p>
                         <p id="circle" className="ball">HTML</p>
                         <p className="ball">CSS</p>
                         <p className="ball">Javascript</p>

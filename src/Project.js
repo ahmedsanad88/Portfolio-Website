@@ -33,7 +33,7 @@ function Project() {
                         </div>
                         <div className="flip-card-back">
                             <h2>Full Stack Ecommerce Website </h2>
-                            <p>Amazon clone app, Including features like Login & Register, Add to Basket, checkout Page, payment process and order page and many additional features. </p>
+                            <p>Ecommerce Website Mobile-friendly , Including features like Login & Register, Add to Basket, checkout Page, payment process and order page and many additional features. </p>
                             <div className="customer__btn">
                                 <button>
                                     <a href="https://github.com/ahmedsanad88/Full-Stack-Ecommerce-App"><CodeIcon /></a>
@@ -152,14 +152,14 @@ function Project() {
                             <img className="img-down" src="./images/5.jpg" loading="lazy" alt="Avatar"/>
                         </div>
                         <div className="flip-card-back">
-                            <h2>Landing Page for Dev Community</h2>
-                            <p>Here is very pure and sleek landing page for dev. community which can be easily adapted with any content or adding features to it.</p>
+                            <h2>Todo's Web-App</h2>
+                            <p>Fully functional todo web-app which including Login and add your todo's with private, mark it as done or delete and edit it all in real time.</p>
                             <div className="customer__btn">
                                 <button>
-                                    <a href="https://github.com/ahmedsanad88/NewsLetter-LandingPage"><CodeIcon /></a>
+                                    <a href="https://github.com/ahmedsanad88/Elegant-Todo-App"><CodeIcon /></a>
                                 </button>
                                 <button>
-                                    <a href="https://intense-island-88095.herokuapp.com/"><PlayArrowIcon /></a>
+                                    <a href="https://todo-app-38e69.web.app/"><PlayArrowIcon /></a>
                                 </button>
                             </div>
                         </div>
