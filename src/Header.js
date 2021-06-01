@@ -37,14 +37,6 @@ function Header() {
             </Link>
         {/* adding 3 links Home & About & Contact */}
         {/* we can create link like so but take care to merge all links together to make it easy for css */}
-            <div className="mobile__manu">
-                <IconButton className="open__icon" style={{background: "rgba(255,255,255,0.1)"}} onClick={showMobileManu}>
-                    <MenuIcon style={{color: "white"}}/>
-                </IconButton>
-                <IconButton className="close__icon" style={{background: "rgba(255,255,255,0.1)", display: 'none'}} onClick={hideMobileManu}>
-                    <CloseIcon style={{color: "white"}}/>
-                </IconButton>
-            </div>
             <div className="header__nav" >
                 <Link to="/main" style={{ textDecoration: 'none' }} onClick={hideMobileManu}>
                     <span className="header__link">Home</span>
@@ -61,6 +53,14 @@ function Header() {
                 <Link to="/contact" style={{ textDecoration: 'none' }} onClick={hideMobileManu}>
                         <span className="header__link">Contact</span>
                 </Link>
+            </div>
+            <div className="mobile__manu">
+                <IconButton className="open__icon" style={{background: "rgba(255,255,255,0.1)"}} onClick={showMobileManu}>
+                    <MenuIcon style={{color: "white"}}/>
+                </IconButton>
+                <IconButton className="close__icon" style={{background: "rgba(255,255,255,0.1)", display: 'none'}} onClick={hideMobileManu}>
+                    <CloseIcon style={{color: "white"}}/>
+                </IconButton>
             </div>
        </div>
        
