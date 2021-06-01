@@ -9,7 +9,7 @@ Clean and sleek Portfolio-Website (Mobile-Friendly) that showing About you, Expe
 [Golive](https://ahmedsanadweb.com/)
 
 
-![Check it fast](https://user-images.githubusercontent.com/57454543/120302341-18335180-c2ce-11eb-85f8-0165adaa8e7f.mp4)
+## Check it:
 
 https://user-images.githubusercontent.com/57454543/120302341-18335180-c2ce-11eb-85f8-0165adaa8e7f.mp4
 
