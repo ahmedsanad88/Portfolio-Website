@@ -35,6 +35,8 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 12px rgba(62, 65, 221, 0.7);
+    -moz-box-shadow: 5px 5px 12px rgba(62, 65, 221, 0.7);
+    -webkit-box-shadow: 5px 5px 12px rgba(62, 65, 221, 0.7);
     margin: 0px 20px;
     animation: example 30s linear infinite alternate;
 }
@@ -112,6 +114,8 @@
         height: 150px;
         border-radius: 10px;
         box-shadow: 3px 3px 10px rgba(62, 65, 221, 0.7);
+        -moz-box-shadow: 3px 3px 10px rgba(62, 65, 221, 0.7);
+        -webkit-box-shadow: 3px 3px 10px rgba(62, 65, 221, 0.7);
         margin: 0px 8px;
         animation: example 30s linear infinite alternate;
     }
@@ -151,6 +155,8 @@
         height: 120px;
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgba(62, 65, 221, 0.7);
+        -moz-box-shadow: 2px 2px 5px rgba(62, 65, 221, 0.7);
+        -webkit-box-shadow: 2px 2px 5px rgba(62, 65, 221, 0.7);
         margin: 20px 5px;
         animation: example 30s linear infinite alternate;
     }

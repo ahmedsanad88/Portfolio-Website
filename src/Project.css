@@ -83,6 +83,8 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-shadow: 10px 10px 20px rgba(62, 65, 221, 0.4);
+    -moz-box-shadow: 10px 10px 20px rgba(62, 65, 221, 0.4);
+    -webkit-box-shadow: 10px 10px 20px rgba(62, 65, 221, 0.4);
 }
 
 .flip-card-front {
@@ -143,6 +145,8 @@
 
 .customer__btn>button:hover {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     background-color: rgba(33, 35, 148, 0.801);
 }
 

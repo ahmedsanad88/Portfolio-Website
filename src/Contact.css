@@ -32,6 +32,8 @@
     color: white;
     background-color: rgba(62, 65, 221, 0.2);
     box-shadow: -5px 5px 5px rgba(62, 65, 221, 0.3);
+    -moz-box-shadow: -5px 5px 5px rgba(62, 65, 221, 0.3);
+    -webkit-box-shadow: -5px 5px 5px rgba(62, 65, 221, 0.3);
     padding: 20px;
     border-radius: 15px;
     transition: all 2s ease;
@@ -40,6 +42,8 @@
 
 .form-text:hover {
     box-shadow: -10px 10px 5px rgba(62, 65, 221, 0.1);
+    -moz-box-shadow: -10px 10px 5px rgba(62, 65, 221, 0.1);
+    -webkit-box-shadow: -10px 10px 5px rgba(62, 65, 221, 0.1);
     transform: translate(10px, -10px);
     -webkit-transform: translate(10px, -10px);
 }
@@ -95,12 +99,16 @@
     border-radius: 15px;
     background-color: rgba(62, 65, 221, 0.2);
     box-shadow: 5px 5px 5px rgba(62, 65, 221, 0.3);
+    -moz-box-shadow: 5px 5px 5px rgba(62, 65, 221, 0.3);
+    -webkit-box-shadow: 5px 5px 5px rgba(62, 65, 221, 0.3);
     transition: all 2s;
     -webkit-transition: all 2s;
 }
 
 .contact__form:hover {
     box-shadow: 20px 20px 20px rgba(62, 65, 221, 0.1);
+    -moz-box-shadow: 20px 20px 20px rgba(62, 65, 221, 0.1);
+    -webkit-box-shadow: 20px 20px 20px rgba(62, 65, 221, 0.1);
     transform: translate(-5px, -5px);
     -webkit-transform: translate(-5px, -5px);
 }
@@ -127,31 +135,11 @@ input:active {
     border: 1px solid #2a2a72;
 }
 
-/* .form-control-file::-webkit-file-upload-button {
-  background-image: linear-gradient(to right, #0072ff , #00c6ff  100%);
-  outline: none;
-  border: none;
-  border-radius: 3px;
-  padding: 4px 6px;
-  margin-top: 3px;
-}
-
-.form-control-file::file-upload-button {
-  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
-  outline: none;
-  border: none;
-  border-radius: 3px;
-  padding: 4px 6px;
-  margin-top: 3px;
-} */
-
-
 .btns {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
-
 
 .btn-grad {
     background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
@@ -178,6 +166,8 @@ input:active {
     color: #fff;
     text-decoration: none;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .alert {

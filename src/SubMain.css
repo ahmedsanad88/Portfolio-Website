@@ -30,6 +30,8 @@
     align-items: center;
     margin: 40px 0px;
     box-shadow: 0 0 12px rgba(98, 0, 255, 0.824);
+    -moz-box-shadow: 0 0 12px rgba(98, 0, 255, 0.824);
+    -webkit-box-shadow: 0 0 12px rgba(98, 0, 255, 0.824);
     border-radius: 15px;
 }
 

@@ -40,6 +40,8 @@
     -moz-border-radius: 15px;
     border-radius: 15px;
     box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+    -moz-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+    -webkit-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
     cursor: pointer;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -48,6 +50,8 @@
 
 .card:hover {
     box-shadow: 0 40px 100px rgba(62, 65, 221, 0.5);
+    -moz-box-shadow: 0 40px 100px rgba(62, 65, 221, 0.5);
+    -webkit-box-shadow: 0 40px 100px rgba(62, 65, 221, 0.5);
     -webkit-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
 }
@@ -320,6 +324,8 @@
         font-size: 1.5rem;
         border-radius: 15px;
         box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        -moz-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        -webkit-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
         cursor: pointer;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
@@ -415,6 +421,8 @@
         font-size: 1.5rem;
         border-radius: 15px;
         box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        -moz-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        -webkit-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
         cursor: pointer;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
@@ -510,6 +518,8 @@
         font-size: large;
         border-radius: 15px;
         box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        -moz-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        -webkit-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
         cursor: pointer;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
@@ -606,6 +616,8 @@
         font-size: small;
         border-radius: 15px;
         box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        -moz-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
+        -webkit-box-shadow: 0 16px 60px rgba(62, 65, 221, 0.4);
         cursor: pointer;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
