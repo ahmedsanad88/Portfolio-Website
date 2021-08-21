@@ -9,13 +9,17 @@ Clean and sleek Portfolio-Website (Mobile-Friendly) that showing About you, Expe
 [Golive](https://ahmedsanadweb.com/)
 
 
-## Check it:
+## Check it 🤗:
 
-https://user-images.githubusercontent.com/57454543/120302341-18335180-c2ce-11eb-85f8-0165adaa8e7f.mp4
 
-# Note:
 
-I used Firebase Cloud Firestore for backend.
+https://user-images.githubusercontent.com/57454543/130334030-ae90e2c4-9a83-464f-a54d-860fa55b9684.mp4
+
+
+
+## Note:
+
+I used Firebase Cloud Firestore firestore.
 
 TAWK.to for real-time chat with customers.
 
@@ -25,11 +29,12 @@ TAWK.to for real-time chat with customers.
 # Technology Used (For Full Website)
 
 React,
+react-router-dom, 
 Material UI,
 Aos,
 Firebase,
 Loadable,
-Particles.js.
+Particles.js & tsparticles.
 
 
 ## Installation
@@ -48,19 +53,17 @@ Front-end dependencies
 ```javascript
 "dependencies": {
 
-    "@loadable/component": "^5.14.1",
-    "@material-ui/core": "^4.11.3",
+    "@loadable/component": "^5.15.0",
+    "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "aos": "^2.3.4",
-    "dotenv": "^8.2.0",
-    "firebase": "^8.3.1",
-    "normalize.css": "^8.0.1",
-    "react": "^17.0.1",
-    "react-awesome-slider": "^4.1.0",
-    "react-dom": "^17.0.1",
-    "react-icons": "^3.11.0",
-    "react-particles-js": "^3.4.1",
+    "dotenv": "^10.0.0",
+    "firebase": "^8.9.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-particles-js": "^3.5.3",
     "react-router-dom": "^5.2.0",
+    "tsparticles": "^1.33.3",
 
 }
 ```
@@ -73,5 +76,5 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Author
-Ahmed Sanad
+#Author
+`Ahmed Sanad`
