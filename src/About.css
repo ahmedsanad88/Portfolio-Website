@@ -19,13 +19,64 @@
         " . list1 list1"
         " skill skill ."
         " . soft soft";
+    position: relative;
+}
+
+.float_resume {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 500;
+    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
+    background-image: -webkit-linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+    padding: 5px 10px 5px 15px;
+    border-radius: 5px;
+}
+
+.float_resume:hover {
+    background-position: right center;
+}
+
+.about__cvlink {
+    color: white !important;
+    font-weight: 800;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about__cvlink:hover {
+    color: black !important;
 }
 
 .about>img {
     width: 150px;
     height: 150px;
     margin-top: 20px;
+    transition: all 1s;
+    cursor: pointer;
 }
+
+/* .about>img:hover {
+    animation: changeImage 5s infinite linear;
+}
+
+@keyframes changeImage {
+    0% {
+       filter: ;
+    }
+    100% {
+       transform: translateX(0vh);
+    }
+} */
+
 
 .about__img {
     grid-area: img;
@@ -34,7 +85,6 @@
     border-radius: 50%;
     border: 2px solid silver;
     object-fit: cover;
-    object-position: 80% 20%;
     justify-self: center;
 }
 
@@ -44,17 +94,18 @@
     -webkit-box-shadow: 0px 0px 30px rgba(62, 65, 221, 1);
 }
 
-
 .about__me {
     grid-area: me;
     align-self: center;
     justify-self: center;
+    margin-top: 10px;
 }
 
-h2 {
+.about h3 {
     text-align: center;
+    color: white;
     padding: 10px 0px;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .aboutMe {
@@ -112,22 +163,15 @@ ul {
     border-radius: 10px;
 }
 
-.word-skill {
-    text-align: center;
-    color: white;
-    font-size: xx-large;
-}
-
-
 .ball {
     border-radius: 50%;
     border: 5px solid lightgray;
-    box-shadow: 0 6px 15px rgba(250, 250, 250, 0.6);
-    -moz-box-shadow: 0 6px 15px rgba(250, 250, 250, 0.6);
-    -webkit-box-shadow: 0 6px 15px rgba(250, 250, 250, 0.6);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
     width: 120px;
     height: 120px;
-    opacity: 0.6;
+    opacity: 0.5;
     text-align: center;
     color: white;
     padding-top: 45px;
@@ -135,7 +179,7 @@ ul {
     transform: scale(0.7);
     -webkit-transform: scale(0.7);
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .all-ball>p {
@@ -149,7 +193,10 @@ ul {
 
 .ball:hover {
     background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    background-image: linear-gradient(to right bottom, #009ffd 25%, #2a2a72 75%);
+    background-image: -ms-linear-gradient(to right bottom, #009ffd 25%, #2a2a72 75%);
+    background-image: -webkit-linear-gradient(to right bottom, #009ffd 25%, #2a2a72 75%);
+    border: 0px solid lightgray;
     opacity: 1;
     transform: scale(1);
     cursor: pointer;
@@ -180,33 +227,30 @@ ol {
 
 /* media query */
 
-/* @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  
-} */
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
 @media (min-width: 768px) and (max-width: 1024px) {
+    .float_resume {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
 
-    /* body {
-    background-image: none;
-    overflow-x: hidden;
-  } */
+    .about__me {
+        margin-top: 40px;
+    }
+
     .about img {
         width: 100px;
         height: 100px;
         margin-top: 20px;
     }
 
-    h2 {
+    .about h3 {
         text-align: center;
         padding: 10px 0px;
         font-size: large;
-        font-weight: 400;
+        font-weight: 800;
     }
 
     .aboutMe {
@@ -222,15 +266,11 @@ ol {
         font-weight: 600;
     }
 
-    .word-skill {
-        font-size: large;
-    }
-
     .ball {
         border: 2px solid lightgray;
-        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-        -moz-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-        -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
         width: 80px;
         height: 80px;
         opacity: 0.6;
@@ -266,11 +306,11 @@ ol {
         margin-top: 20px;
     }
 
-    h2 {
+    .about h3 {
         text-align: center;
         padding: 10px 0px;
         font-size: large;
-        font-weight: 400;
+        font-weight: 800;
     }
 
     .aboutMe {
@@ -286,15 +326,11 @@ ol {
         font-weight: 600;
     }
 
-    .word-skill {
-        font-size: large;
-    }
-
     .ball {
         border: 2px solid lightgray;
-        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-        -moz-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-        -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
         width: 80px;
         height: 80px;
         opacity: 0.6;
@@ -314,6 +350,17 @@ ol {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+    .float_resume {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+
+    .about__me {
+        margin-top: 40px;
+    }
 
     .about img {
         width: 100px;
@@ -321,11 +368,11 @@ ol {
         margin-top: 20px;
     }
 
-    h2 {
+    .about h3 {
         text-align: center;
         padding: 10px 0px;
         font-size: large;
-        font-weight: 400;
+        font-weight: 800;
     }
 
     .aboutMe {
@@ -341,15 +388,11 @@ ol {
         font-weight: 600;
     }
 
-    .word-skill {
-        font-size: large;
-    }
-
     .ball {
         border: 2px solid lightgray;
-        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-        -moz-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-        -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
         width: 80px;
         height: 80px;
         opacity: 0.6;
@@ -373,7 +416,17 @@ ol {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .float_resume {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
 
+    .about__me {
+        margin-top: 40px;
+    }
 
     .about img {
         width: 100px;
@@ -381,7 +434,7 @@ ol {
         margin-top: 20px;
     }
 
-    h2 {
+    .about h3 {
         text-align: center;
         padding: 10px 0px;
         font-size: small;
@@ -400,15 +453,11 @@ ol {
         font-weight: 600;
     }
 
-    .word-skill {
-        font-size: small;
-    }
-
     .ball {
         border: 2px solid lightgray;
-        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-        -moz-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
-        -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
         width: 80px;
         height: 80px;
         opacity: 0.6;

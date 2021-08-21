@@ -9,12 +9,12 @@
 
 .particles__contact {
     position: absolute;
-    filter: blur(4px);
     z-index: -100;
 }
 
 #tsparticles {
-    height: 85vh;
+    filter: blur(4px);
+    height: 100vh;
     width: 100vw;
 }
 
@@ -90,6 +90,7 @@
     font-size: 20px;
     width: 100%;
     padding-left: 90px;
+    position: relative;
 }
 
 .btn1 {

@@ -51,11 +51,6 @@
 
 }
 
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
     .footer {
@@ -69,22 +64,6 @@
 
 }
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-/* @media (min-width: 481px) and (max-width: 767px) {
-  
-  
-  
-} */
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
 @media (min-width: 320px) and (max-width: 767px) {
 
     .footer {
@@ -93,7 +72,7 @@
         height: 20vh;
         width: 100vw;
         padding: 10px;
-        font-weight: 600;
+        font-weight: 500;
         font-size: small;
     }
 }

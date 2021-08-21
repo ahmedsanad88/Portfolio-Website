@@ -21,11 +21,11 @@ function Customer() {
     return (
         <div className="cutomer">
             {/* <h1 data-aos="fade-up"> Our Clients FeedBack</h1> */}
-            <h1 data-aos="fade-up">Coming <br/> <span className="soon">Soon</span></h1>
+            <h3 data-aos="fade-up">Clients <br/> <span className="soon">Are Here...</span></h3>
             <div data-aos="fade" className="customer__container">
-                <img src="./images/customer.JPG" loading="lazy" alt="Avatar" />
-                <img src="./images/customer.JPG" loading="lazy" alt="Avatar" /> 
-                <img src="./images/customer.JPG" loading="lazy" alt="Avatar" />
+                <img src="./images/customer.JPG" loading="lazy" alt="Customer Feedback" width="1177" height="791" />
+                <img src="./images/customer.JPG" loading="lazy" alt="Customer Feedback" width="1177" height="791" /> 
+                <img src="./images/customer.JPG" loading="lazy" alt="Customer Feedback" width="1177" height="791" />
             </div>
         </div>
     )

@@ -33,17 +33,17 @@ function Nav() {
     return (
         <div data-aos="fade-left" data-aos-delay="200" className="float-chat">
 
-            <button className="arrowUp" onClick={backToTop} style={{color:"rgb(62, 65, 221)",fontSize:"xx-large"}} ><ArrowUpwardIcon /></button>
+            <button aria-label="arrow up" className="arrowUp" onClick={backToTop} style={{color:"rgb(62, 65, 221)",fontSize:"xx-large"}} ><ArrowUpwardIcon /></button>
 
             {/* <a className="main-body" href="https://wa.me/00201063219470">
                 <WhatsAppIcon style={{color:"whitesmoke",fontSize:"xx-large"}}/>
             </a> */}
 
-            <a href="mailto:ahmedibrahim151188@outlook.com" className="main-contact" style={{ textDecoration: 'none' }}>
-                <MailIcon style={{color:"rgb(255, 255, 255)",fontSize:"x-large"}}/>
+            <a aria-label="mail me!" href="mailto:ahmedibrahim151188@outlook.com" className="main-contact" style={{ textDecoration: 'none' }}>
+                <MailIcon aria-label="mail me!" style={{color:"rgb(255, 255, 255)",fontSize:"x-large"}}/>
             </a>
 
-            <a className="arrowUp" href="#bottom" style={{color:"rgb(62, 65, 221)",fontSize:"xx-large"}} ><ArrowDownwardIcon /></a>
+            <a aria-label="arrow down" className="arrowUp" href="#bottom" style={{color:"rgb(62, 65, 221)",fontSize:"xx-large"}} ><ArrowDownwardIcon aria-label="arrow down" /></a>
         </div>
     )
 }

@@ -33,33 +33,33 @@ function Header() {
     return (
        <div className="header">
             <Link to="/">
-                <img className="header__img" src="./images/My-Logo-1200---1200.png" loading="lazy" alt="Logo"></img>
+                <img className="header__img" src="./images/new-logo.png" alt="Logo" width="50" height="39" />
             </Link>
         {/* adding 3 links Home & About & Contact */}
         {/* we can create link like so but take care to merge all links together to make it easy for css */}
             <div className="header__nav" >
                 <Link to="/main" style={{ textDecoration: 'none' }} onClick={hideMobileManu}>
-                    <span className="header__link">Home</span>
+                    <h3 className="header__link">Home</h3>
                 </Link>
 
                 <Link to="/about" style={{ textDecoration: 'none' }} onClick={hideMobileManu}>
-                        <span className="header__link">About</span>
+                        <h3 className="header__link">About</h3>
                 </Link>
 
                 <Link to="/project" style={{ textDecoration: 'none' }} onClick={hideMobileManu}>
-                        <span className="header__link">Projects</span>
+                        <h3 className="header__link">Projects</h3>
                 </Link>
 
                 <Link to="/contact" style={{ textDecoration: 'none' }} onClick={hideMobileManu}>
-                        <span className="header__link">Contact</span>
+                        <h3 className="header__link">Contact</h3>
                 </Link>
             </div>
             <div className="mobile__manu">
-                <IconButton className="open__icon" style={{background: "rgba(255,255,255,0.1)"}} onClick={showMobileManu}>
-                    <MenuIcon style={{color: "white"}}/>
+                <IconButton aria-label="open Manu" className="open__icon" style={{background: "rgba(255,255,255,0.1)"}} onClick={showMobileManu}>
+                    <MenuIcon aria-label="open Manu" style={{color: "white"}} />
                 </IconButton>
-                <IconButton className="close__icon" style={{background: "rgba(255,255,255,0.1)", display: 'none'}} onClick={hideMobileManu}>
-                    <CloseIcon style={{color: "white"}}/>
+                <IconButton aria-label="close Manu" className="close__icon" style={{background: "rgba(255,255,255,0.1)", display: 'none'}} onClick={hideMobileManu}>
+                    <CloseIcon aria-label="close Manu" style={{color: "white"}} />
                 </IconButton>
             </div>
        </div>

@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.cutomer h1 {
+.cutomer h3 {
     font-size: x-large;
     font-weight: 700;
     margin-top: 50px;
@@ -34,9 +34,7 @@
     width: 350px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 12px rgba(62, 65, 221, 0.7);
-    -moz-box-shadow: 5px 5px 12px rgba(62, 65, 221, 0.7);
-    -webkit-box-shadow: 5px 5px 12px rgba(62, 65, 221, 0.7);
+    border: 5px solid hsl(120, 100%, 15%);
     margin: 0px 20px;
     animation: example 30s linear infinite alternate;
 }
@@ -54,11 +52,9 @@
     }
 }
 
-
-
-
+/* Media Query */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .cutomer h1 {
+    .cutomer h3 {
         font-size: large;
         font-weight: 700;
         margin-top: 20px;
@@ -78,22 +74,13 @@
         width: 250px;
         height: 150px;
         border-radius: 10px;
-        box-shadow: 3px 3px 10px rgba(62, 65, 221, 0.7);
         margin: 0px 8px;
-        animation: example 30s linear infinite alternate;
     }
-
-
 }
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-    .cutomer h1 {
+    .cutomer h3 {
         font-size: large;
         font-weight: 500;
         margin-top: 20px;
@@ -113,29 +100,15 @@
         width: 250px;
         height: 150px;
         border-radius: 10px;
-        box-shadow: 3px 3px 10px rgba(62, 65, 221, 0.7);
-        -moz-box-shadow: 3px 3px 10px rgba(62, 65, 221, 0.7);
-        -webkit-box-shadow: 3px 3px 10px rgba(62, 65, 221, 0.7);
         margin: 0px 8px;
-        animation: example 30s linear infinite alternate;
     }
 
 
 }
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
 @media (min-width: 320px) and (max-width: 767px) {
 
-    .cutomer h1 {
+    .cutomer h3 {
         font-size: small;
         font-weight: 600;
         margin-top: 20px;
@@ -154,11 +127,7 @@
         width: 250px;
         height: 120px;
         border-radius: 10px;
-        box-shadow: 2px 2px 5px rgba(62, 65, 221, 0.7);
-        -moz-box-shadow: 2px 2px 5px rgba(62, 65, 221, 0.7);
-        -webkit-box-shadow: 2px 2px 5px rgba(62, 65, 221, 0.7);
         margin: 20px 5px;
-        animation: example 30s linear infinite alternate;
     }
 
 }

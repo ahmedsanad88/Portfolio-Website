@@ -28,21 +28,21 @@ function SubMain() {
         <div className="subMain">
             <div data-aos="fade-up" className="subMain__container">
                 <div data-aos="fade-right" className="subMain__img">
-                    <img src="./images/mine.jpg" loading="lazy" alt="personal_image" />
-                    <svg class="card__svg" viewBox="0 0 800 500">
+                    <img src="./images/mine.jpg" loading="lazy" alt="personal_image" width="650" height="1000" />
+                    <svg className="card__svg" viewBox="0 0 800 500">
                         <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#000"/>
-                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="gray" stroke-width="3" fill="transparent"/>
+                        <path className="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="gray" strokeWidth="3" fill="transparent"/>
                     </svg>
                 </div>
                 <div data-aos="fade-left" className="subMain__info">
-                    <h3>Hello There 👋</h3>
+                    <h3>Hi there 👋</h3>
                     <p>My name is</p>
-                    <span className="info__name">Ahmed Sanad</span><br/> 
-                    <q className="info__job">Your Next Developer</q><br/>
+                    <h1><span className="info__name">Ahmed Sanad</span></h1><br/> 
+                    <h1><q className="info__job">Your Next Developer</q></h1><br/>
                     <p>
                         <span className="info__text">
-                            Working with passion as full time developer.
-                            I have a diverse set of skills like design, HTML, CSS, Javascript and much more libraries and tools for both front-end & back-end which comes all togther to deliver Working with mastery and commitment.
+                            Working with passion as a full-time developer.
+                            I have a diverse set of skills like design, HTML, CSS, Javascript in addition to libraries &  Frameworks and tools used for both front-end (React.js) & back-end (Node.js) which merge all together to deliver Working with mastery and commitment.
                         </span>
                     </p>
                 </div>

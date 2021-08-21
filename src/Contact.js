@@ -1,12 +1,10 @@
 //jshint esversion:6
-
 import React, { useEffect } from 'react';
 import "./Contact.css"; 
 import Particles from 'react-particles-js';
 import firebaseApp from "./firebase";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
 
 
 function Contact() {
@@ -26,29 +24,32 @@ function Contact() {
     function serverData(e){
         e.preventDefault();
         // Getting value once click submit
-        const fname = getId("fname");
-        const company = getId("company");
-        const email = getId("email");
-        const mobile = getId("mobile");
-        const subject = getId("subject");
+        const fname = String(getId("fname"));
+        const company = String(getId("company"));
+        const email = String(getId("email"));
+        const mobile = String(getId("mobile"));
+        const subject = String(getId("subject"));
         // const file = getId("file");
 
-        if(fname && email && subject) {
-        // save for message
-        saveMessage(fname, company, email, mobile, subject);
-
-        // show alert
-        document.querySelector('.alert').style.display="block";
-
-        // removing alert after 3 sec.
-
-        setTimeout(() => {
-            document.querySelector('.alert').style.display="none";
-        }, 3000);
-
-        //  reset form after submition
-        document.getElementById('contactForm').reset();
-
+        if(fname.length !== 0 && email.length !== 0 && subject.length !== 0) {
+            if (fname[0] !== " " && email[0] !== " " && subject[0] !== " ") {
+                // save for message
+                saveMessage(fname, company, email, mobile, subject);
+        
+                // show alert
+                document.querySelector('.alert').style.display="block";
+        
+                // removing alert after 3 sec.
+        
+                setTimeout(() => {
+                    document.querySelector('.alert').style.display="none";
+                }, 3000);
+        
+                //  reset form after submition
+                document.getElementById('contactForm').reset();
+            } else {
+                alert("Please Avoid using empty spacebar click!");
+            }
         } else {
         alert("please Enter at least (Name & Email and Subject) to manage contacting you back, Thanks..");
         }
@@ -77,9 +78,6 @@ function Contact() {
         });
     };
 
-
-
-
     return (
         <div className="form">
             <div data-aos="fade-right" data-aos-delay="200" className="form-text">
@@ -100,7 +98,7 @@ function Contact() {
                 </div>
             </div>
 
-            <form method="POST" data-aos="fade-left" id="contactForm" className="contact__form"  autoComplete="off" enctype="text/plain">
+            <form method="POST" data-aos="fade-left" id="contactForm" className="contact__form"  autoComplete="off" encType="text/plain">
                 <div className="alert"><p>Thanks For contacting us</p>
                 <p>Will get back to you soon...</p> </div>
                 <label ><b>Name</b></label><br/>
@@ -146,6 +144,20 @@ function Contact() {
                             "speed": 80,
                             "size_min": 0.1,
                             "sync": false
+                        }
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "bottom",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
                         }
                     }
                 }

@@ -7,13 +7,13 @@ import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import './App.css';
 import SubMain from './SubMain';
 
-const Footer = loadable(() => import ('./Footer'));
-const Home = loadable(() => import ('./Home'));
-const Customer = loadable(() => import ('./Customer'));
-const Contact = loadable(() => import ('./Contact'));
-const Project = loadable(() => import ('./Project'));
-const About = loadable(() => import ('./About'));
-const Nav = loadable(() => import ('./Nav'));
+const Footer = loadable(() => import('./Footer'));
+const Home = loadable(() => import('./Home'));
+const Customer = loadable(() => import('./Customer'));
+const Contact = loadable(() => import('./Contact'));
+const Project = loadable(() => import('./Project'));
+const About = loadable(() => import('./About'));
+const Nav = loadable(() => import('./Nav'));
 
 
 function App() {
