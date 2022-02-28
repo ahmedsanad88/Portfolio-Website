@@ -1,7 +1,7 @@
 
 # Portfolio-Website (Mobile-Friendly)
 
-Clean and sleek Portfolio-Website (Mobile-Friendly) that showing About you, Experience, Projects, real chat with customers, contact form Easy to navigate Thanks to React Components.
+Clean and sleek Portfolio-Website (Mobile-Friendly) that shows About you, Experience, Projects, real chat with customers, contact form Easy to navigate Thanks to React Components.
 
 
 # How it's looking on live?
